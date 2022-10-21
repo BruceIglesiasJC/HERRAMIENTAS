@@ -1,0 +1,130 @@
+/*SECTION TITLE INTERNA*/
+.sect_title_interna{
+    padding: 50px 0;
+    position: relative;
+    background-position: bottom;
+    background-size: cover;
+}
+.sect_title_interna:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .5;
+}
+.row_height{
+    height: 150px;
+    align-items: flex-end;
+}
+.sect_title_interna h1{
+    color: #fff;
+    font-weight: 700;
+}
+@media(max-width: 991px){
+    .sect_title_interna h1 {
+        font-size: 30px;
+    }
+    .row_height {
+        height: 140px;
+    }
+}
+@media(max-width: 767px){
+    .sect_title_interna h1 {
+        font-size: 25px;
+    }
+    .row_height {
+        height: 130px;
+    }
+    .sect_title_interna {
+        padding: 20px 0;
+    }
+}
+@media(max-width: 500px){
+    .sect_title_interna h1 {
+        font-size: 18px;
+    }
+}
+/*END SECTION TITLE INTERNA*/
+
+
+/*SECTION MARCAS*/
+.sect_marcas{
+	padding: 50px 0;
+}
+.p_descrip{
+	text-align: left;
+	color: #848484;
+	font-size: 20px;
+	margin-bottom: 50px;
+	font-style: italic;
+}
+.box_marcas{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	-moz-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	-o-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+.box_marcas .box_item{
+	width: 25%;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+.box_marcas .box_item:before{
+	content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #27313c;
+    opacity: .8;
+	transition: all ease 500ms;
+}
+.box_marcas .box_item:hover:before{
+	opacity: 0;
+	transition: all ease 500ms;
+}
+.box_marcas .box_item .box_caption{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	transform: translate(0, -100%);
+	transition: all ease 500ms;
+}
+.box_marcas .box_item:hover .box_caption{
+	transform: translate(0, 0%);
+    transition: all ease 500ms;
+}
+.box_marcas .box_item .box_caption img{
+	width: 100%;
+    max-width: 270px;
+}
+@media(max-width: 991px){
+	.box_marcas .box_item {
+	    width: 33.3%;
+	}
+}
+@media(max-width: 560px){
+	.box_marcas .box_item {
+	    width: 50%;
+	}
+	.box_marcas .box_item .box_caption img{
+	    max-width: 150px;
+	}
+}
+/**/

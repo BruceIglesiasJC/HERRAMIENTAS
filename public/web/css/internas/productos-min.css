@@ -1,0 +1,232 @@
+/*SECTION TITLE INTERNA*/
+.sect_title_interna{
+    padding: 50px 0;
+    position: relative;
+    background-position: bottom;
+    background-size: cover;
+}
+.sect_title_interna:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .5;
+}
+.row_height{
+    height: 150px;
+    align-items: flex-end;
+}
+.sect_title_interna h1{
+    color: #fff;
+    font-weight: 700;
+}
+@media(max-width: 991px){
+    .sect_title_interna h1 {
+        font-size: 30px;
+    }
+    .row_height {
+        height: 140px;
+    }
+}
+@media(max-width: 767px){
+    .sect_title_interna h1 {
+        font-size: 25px;
+    }
+    .row_height {
+        height: 130px;
+    }
+    .sect_title_interna {
+        padding: 20px 0;
+    }
+}
+@media(max-width: 500px){
+    .sect_title_interna h1 {
+        font-size: 18px;
+    }
+}
+/*END SECTION TITLE INTERNA*/   
+
+/*SECTION PRODUCTOS*/
+.sect_servicio_descripcion{
+    padding: 50px 0;
+}
+.accordion {
+    width: 100%;
+    background: #ecffec;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    list-style: none;
+    padding-left: 0;
+}
+
+.accordion .link {
+    position: relative;
+    padding: 20px 30px;
+    color: #353535;
+    line-height: normal;
+    cursor: pointer;
+    background-color: #fff;
+    margin-bottom: 20px;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+        box-shadow: 0px 0px 6px 0px #ccc;
+}
+
+.accordion li:last-child .link {
+    border-bottom: 0;
+}
+
+.accordion li i {
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    font-size: 18px;
+    color: #ffffff;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.accordion li i.fa-chevron-down {
+    right: 12px;
+    left: auto;
+    font-size: 16px;
+}
+
+.accordion li:hover .link {
+    color: #e4a70d;
+    transition: all ease 500ms;
+}
+
+.accordion li.open .link.dropdowncate {
+    color: #e4a70d;
+}
+
+.accordion li.open .icon_down:before {
+    color: #e4a70d;
+}
+
+.accordion li.open .icon_down:before {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    transition: all ease 500ms;
+}
+
+
+/**
+ * Submenu
+ -----------------------------*/
+
+.submenu {
+    display: none;
+    font-size: 14px;
+    list-style: square;
+}
+
+.submenu li > a{
+    display: block;
+    padding: 10px 20px;
+        font-weight: 600;
+    color: #000;
+    text-decoration: none;
+    transition: all ease 500ms;
+}
+.submenu li > a.active{
+    color: #00aff2;
+}
+.submenu li > a:hover {
+    color: #e4a70d;
+    transition: all ease 500ms;
+}
+.icon_down:before {
+    content: "\f078";
+    font-family: FontAwesome;
+    position: absolute;
+    right: 18px;
+    transition: all ease 500ms;
+}
+
+/**/
+
+@media(max-width: 991px){
+    .order2_mobile{
+        order: 2;
+    }
+}
+
+/*SECTION PRODUCTOS*/
+.sect_productos{
+    padding: 50px 0;
+    background: #fff;
+}
+.box_productos{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    -o-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+.box_productos .box_item{
+        width: 22%;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 30px;
+}
+.box_productos .box_body h5{
+    margin-bottom: 0;
+}
+.box_productos .box_body h5>a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    display: block;
+}
+.box_productos .box_body{
+    padding: 5px 0;
+    background: #e4a70d;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+.box_productos .box_body h6{
+    text-align: center;
+    color: #f6f6f6;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.stars{
+    position: absolute;
+    top: 0;
+    left: -7px;
+}
+.stars>span{
+    display: block;
+}
+.stars>span:before{
+    content: "\f005";
+    font-family: "FontAwesome";
+    color: #27313c;
+}
+
+@media(max-width: 991px){
+    .box_productos .box_item{
+        width: 30%;
+    }
+}
+@media(max-width: 595px){
+    .box_productos .box_item{
+        width: 45%;
+    }
+}
